@@ -12,11 +12,11 @@ public class App {
 		Transaction t = ses.beginTransaction();
 		Employee e = new Employee();
 		e.setEmpId(101);
-		e.setEmpFirstName("Sankalpa");
-		e.setEmpLastName("Das");
-		e.setEmpEmail("sank@gmail.com");
+		e.setEmpFirstName("Tiyasa");
+		e.setEmpLastName("Naskar");
+		e.setEmpEmail("tiyasa@gmail.com");
 		e.setEmpPhone(12345679);
-		e.setEmpAddr("Behala");
+		e.setEmpAddr("Sonarpur");
 		e.setEmpSalary(1200.98);
 		ses.save(e);
 		t.commit();

@@ -24,14 +24,14 @@ public class ServiceLayer {
 			String author = JOptionPane.showInputDialog("Enter author:");
 			int price = Integer.parseInt(JOptionPane.showInputDialog("Enter price:"));
 			
-			//setting all employee details within employee entity
+			//setting all book details
 			b.setBook_ID(bookID);
 			b.setTitle(title);
 			b.setAuthor(author);
 			b.setPrice(price);
 			
 			dao.add(b); 											//calling add method from DAO interface
-			System.out.println("Employee successfully added...");
+			System.out.println("Book successfully added...");
 			scan.close(); 												//closing scanner obj.
 		}
 	//----------------------------------------------------------------------------------------------------------------
